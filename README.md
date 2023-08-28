@@ -14,6 +14,55 @@ La solución se compone de dos partes principales:
 
 La interfaz web consumirá un API de terceros para obtener las noticias y un API propia para gestionar los favoritos.
 
+## Modelo de Datos
+
+El modelo de datos se compone de las siguientes entidades:
+
+### User
+
+Representa un usuario registrado.
+
+- **id:** Identificador único del usuario.
+- **first_name:** Primer nombre del usuario.
+- **last_name:** Apellido del usario.
+- **email:** Correo electronico, usado como nombre de usuario unico.
+- **password:** Contraseña cifrada.
+- **isDeleted:** Borrado logico.
+
+### Token
+
+Representa el token de acceso de un usuario.
+
+- **id:** Identificador del token.
+- **token:** Token.
+- **created_at:** Fecha de creacion del token.
+- **update_at:** Fecha de actualizacion del token.
+- **expired:** Si el token a expirado.
+- **revoked:** Si el token a revocado. 
+- **user_id:** Identificador del usuario a quien le pertenece el token.
+
+### Article
+
+Representa una noticia obtenida de la API de terceros. 
+
+- **id:** Identificador único de la noticia.
+- **title:** Título de la noticia.
+- **summary:** Resumen de la noticia.
+- **published_at:** Fecha de publicacion de la noticia.
+- **api_id:** Identificador unico del articlo en la api externa utilizada.
+
+### Favorite
+
+Representa la relacion entre la entidad User y Article
+
+- **id:** Identificador único de la noticia favorita.
+- **user_id:** Identificador unico del usuario.
+- **article_id:** Identificador unico de la noticia.
+- **update_at:** Fecha de actualizacion del registro.
+- **created_at:** Fecha de creacion del registro.
+- **is_delete:** Borrado logico.
+
+
 ## Tecnologías Utilizadas
 
 - **Angular:** Utilizado para el desarrollo de la interfaz web SPA. Es un framework de desarrollo para construir aplicaciones web de una sola página.
