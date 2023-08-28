@@ -1,0 +1,43 @@
+.articles{
+  display: flex;
+  height: calc(80vh);
+  width: calc(100vw - 20vw);
+  max-height: 1000px;
+  min-height: 500px;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+justify-content: center;
+gap: 1em;
+}
+
+mat-form-field{
+  width: 500px;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.order > mat-form-field{
+  width: 100%;
+}
+
+.order > mat-select{
+  background-color: white;
+}
+
+
+  
+  

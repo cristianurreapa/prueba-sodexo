@@ -1,0 +1,11 @@
+<div class="side-bar">
+   <div *ngIf="!isAuth" class="logout">
+      <button mat-button (click)="openRegister()">Sign Up</button>
+      <button mat-button (click)="openLogin()">Sign in</button>
+   </div>
+   <div *ngIf="isAuth" class="login">
+      <button mat-button (click)="logout()">Logout</button>
+      <div class="link" routerLink="/">News</div>
+      <div class="link" routerLink="/favorite">Favorites</div>
+   </div>
+</div>

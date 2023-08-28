@@ -1,0 +1,15 @@
+<div class="auth">
+    <h2>Sign In</h2>
+    <form [formGroup]="form" class="form-auth" (submit)="login(form.value)">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="password" [type]="'password'" formControlName="password" required>
+        </mat-form-field>
+        
+        <button mat-raised-button color="primary">Sign In</button>
+    </form>
+    <button mat-button (click)="openRegister()">Sign Up</button>
+    <mat-error  *ngIf="messageError != null" >{{messageError}}</mat-error>
+</div>

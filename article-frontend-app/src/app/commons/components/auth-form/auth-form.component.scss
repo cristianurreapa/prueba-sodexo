@@ -1,0 +1,24 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 1rem;
+    gap: 1em;
+}
+
+.form-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+mat-label {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+mat-error{
+    color: red;
+  }

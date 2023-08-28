@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="search" class="form">
+    <mat-form-field class="example-full-width">
+      <input matInput formControlName="filter" placeholder="Search"  >
+    </mat-form-field>
+    <div class="order" >
+      <mat-form-field>
+        <mat-label class="mat-body-2">Order By</mat-label>
+        <mat-select class="mat-body-2" formControlName="order" (selectionChange)="order()" >
+          <mat-option class="mat-body-2" *ngIf="!favorite"  value="published_at">published at ascending</mat-option>
+          <mat-option class="mat-body-2" *ngIf="!favorite" value="-published_at">published at descending</mat-option>
+          <mat-option class="mat-body-2" *ngIf="favorite"  value="asc">added on ascending</mat-option>
+          <mat-option class="mat-body-2" *ngIf="favorite" value="desc">added on descending</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </form>
+    <mat-paginator #paginator *ngIf="articles != null" class="mat-body-2" [length]="articles.count" (page)="paginater()" [pageSize]="10">
+    </mat-paginator>
+  <cdk-virtual-scroll-viewport *ngIf="articles != null" appendOnly itemSize="50" class="articles">
+    <div *cdkVirtualFor="let article of articles.data" class="item" >
+      <app-article-card [article]="article" ></app-article-card>
+    </div>
+  </cdk-virtual-scroll-viewport>
+</div>

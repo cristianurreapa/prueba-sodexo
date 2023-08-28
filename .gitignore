@@ -1,0 +1,42 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/article-frontend-app/dist
+/article-frontend-app/tmp
+/article-frontend-app/out-tsc
+/article-frontend-app/bazel-out
+
+# Node
+/article-frontend-app/node_modules
+/article-frontend-app/npm-debug.log
+/article-frontend-app/yarn-error.log
+
+# IDEs and editors
+/article-frontend-app/.idea/
+/article-frontend-app/.project
+/article-frontend-app/.classpath
+/article-frontend-app/.c9/
+/article-frontend-app/.launch
+/article-frontend-app/settings/
+/article-frontend-app/.sublime-workspace
+
+# Visual Studio Code
+/article-frontend-app.vscode/*
+/article-frontend-app/!.vscode/settings.json
+/article-frontend-app/!.vscode/tasks.json
+/article-frontend-app/!.vscode/launch.json
+/article-frontend-app/!.vscode/extensions.json
+/article-frontend-app/.history/*
+
+# Miscellaneous
+/article-frontend-app/.angular/cache
+/article-frontend-app/.sass-cache/
+/article-frontend-app/connect.lock
+/article-frontend-app/coverage
+/article-frontend-app/libpeerconnection.log
+/article-frontend-app/testem.log
+/article-frontend-app/typings
+
+# System files
+/article-frontend-app/.DS_Store
+/article-frontend-app/Thumbs.db

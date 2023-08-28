@@ -1,0 +1,31 @@
+.logout,
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.link {
+    width: 80%;
+    border-top: 1px black solid;
+    text-align: center;
+    padding: .5em;
+}
+
+.link:hover {
+    background-color: black;
+    color: white;
+    opacity: 90%;
+
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
