@@ -88,9 +88,9 @@ La documentación del API del microservicio se puede encontrar en el contrato Sw
 ```
 src/main/resources/api-docs.yaml
 ```
-o en el enlace de Swagger Ui siguiente 
+o en el enlace de Swagger Ui 
 ```
-npm install -g @angular/cli](http://localhost:8080/swagger-ui/index.html)
+http://localhost:8080/swagger-ui/index.html
 ```
 ## Pruebas
 
