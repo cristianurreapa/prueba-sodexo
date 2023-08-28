@@ -84,8 +84,14 @@ La interfaz web consumirá un API de terceros para obtener las noticias y un API
 
 ## API
 
-La documentación del API del microservicio se puede encontrar en el contrato Swagger (OpenAPI) proporcionado en formato YML.
-
+La documentación del API del microservicio se puede encontrar en el contrato Swagger (OpenAPI) proporcionado en formato YML en la ruta.
+```
+src/main/resources/api-docs.yaml
+```
+o en el enlace de Swagger Ui siguiente 
+```
+npm install -g @angular/cli](http://localhost:8080/swagger-ui/index.html)
+```
 ## Pruebas
 
 ### Pruebas Unitarias
