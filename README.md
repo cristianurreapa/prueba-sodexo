@@ -31,6 +31,8 @@ La interfaz web consumirá un API de terceros para obtener las noticias y un API
 - **Gradle:** Herramienta de automatización de la construcción utilizada para gestionar las dependencias y construir el microservicio.
 
 - **Swagger (OpenAPI):** Utilizado para documentar los endpoints del API del microservicio.
+  
+- **JWT (JSON Web Tokens):** Estándar utilizado para la creación de tokens de acceso que permiten la propagación de identidad y privilegios. Se utiliza en conjunto con Spring Security para manejar la autenticación y autorización en el microservicio.
 
 ## Instalación y Configuración
 
